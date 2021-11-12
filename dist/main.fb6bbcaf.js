@@ -23353,6 +23353,8 @@ function validateParams (params) {
 }
 
 },{"http":"node_modules/stream-http/index.js","url":"node_modules/url/url.js"}],"js/main.js":[function(require,module,exports) {
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 var bootstrap = require('bootstrap');
 
 var xml2js = require('xml2js');
@@ -23416,6 +23418,7 @@ var req = http.get(url, function (res) {
     parser.parseString(data, function (error, result) {
       if (error === null) {
         console.log(result);
+        console.log('typ ' + _typeof(result));
       } else {
         console.log(error);
       }
@@ -23450,7 +23453,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58398" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63830" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

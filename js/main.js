@@ -60,6 +60,7 @@ let req = http.get(url, function(res) {
         parser.parseString(data, function(error, result) {
             if(error === null) {
                 console.log(result);
+                console.log('typ ' + typeof result);
             }
             else {
                 console.log(error);
