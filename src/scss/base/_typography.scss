@@ -1,0 +1,44 @@
+b, strong,
+.bold {
+  font-family: $font-family-bold;
+}
+.upper {
+  text-transform: uppercase;
+}
+h1, h2, h3, h4, h5, h6, p, a, input,
+textarea,
+select, .form-control {
+  font-family: 'FFDinWebPro', arial, sans-serif;
+}
+
+.display-3 {
+  @include media-breakpoint-only(xs) {
+    font-size: 1.5em;
+  }
+}
+code {
+  color: inherit;
+  font-family: inherit;
+}
+
+pre {
+  color: inherit;
+  font-family: inherit;
+}
+
+cite {
+  color: inherit;
+  font-family: inherit;
+}
+
+/*----------  lists  ----------*/
+ol,
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.bullet-list {
+  margin-left: 1rem;
+  list-style-type: disc;
+}
