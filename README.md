@@ -1,2 +1,2 @@
 # camp-ivanhoe
-Fooling around with a new product search for Carboline.com
+Fooling around with [new tools](https://tvollmer89.github.io/camp-ivanhoe/) for Carboline.com.
