@@ -11,17 +11,13 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import Main from './components/Main';
 
-class HelloMessage extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Main />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Header />
+      <Main />
+    </div>
+  );
 }
 
-let App = document.getElementById('app');
-
-ReactDOM.render(<HelloMessage name="World" />, App);
+ReactDOM.render(<App />, document.getElementById('app'));

@@ -959,46 +959,45 @@ var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _main = require("./components/Main");
 var _mainDefault = parcelHelpers.interopDefault(_main);
-class HelloMessage extends _reactDefault.default.Component {
-    render() {
-        return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
-            __source: {
-                fileName: "Documents/Nerds/camp-ivanhoe/src/index.js",
-                lineNumber: 17,
-                columnNumber: 7
-            },
-            __self: this,
-            children: [
-                /*#__PURE__*/ _jsxRuntime.jsx(_headerDefault.default, {
-                    __source: {
-                        fileName: "Documents/Nerds/camp-ivanhoe/src/index.js",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    },
-                    __self: this
-                }),
-                /*#__PURE__*/ _jsxRuntime.jsx(_mainDefault.default, {
-                    __source: {
-                        fileName: "Documents/Nerds/camp-ivanhoe/src/index.js",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    },
-                    __self: this
-                })
-            ]
-        }));
-    }
+function App() {
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "Documents/Nerds/camp-ivanhoe/src/index.js",
+            lineNumber: 16,
+            columnNumber: 5
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_headerDefault.default, {
+                __source: {
+                    fileName: "Documents/Nerds/camp-ivanhoe/src/index.js",
+                    lineNumber: 17,
+                    columnNumber: 7
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx(_mainDefault.default, {
+                __source: {
+                    fileName: "Documents/Nerds/camp-ivanhoe/src/index.js",
+                    lineNumber: 18,
+                    columnNumber: 7
+                },
+                __self: this
+            })
+        ]
+    }));
 }
-let App = document.getElementById('app');
-_reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(HelloMessage, {
-    name: "World",
+_c = App;
+_reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
     __source: {
         fileName: "Documents/Nerds/camp-ivanhoe/src/index.js",
-        lineNumber: 27,
+        lineNumber: 23,
         columnNumber: 17
     },
     __self: undefined
-}), App);
+}), document.getElementById('app'));
+var _c;
+$RefreshReg$(_c, "App");
 
   $parcel$ReactRefreshHelpers$8e58.postlude(module);
 } finally {
