@@ -6,21 +6,16 @@ import Fuse from 'fuse.js';
 
 function Main() {
   const [data, setData] = useState(termsData);
-  const options = {
-    // isCaseSensitive: false,
+  const options = { // isCaseSensitive: false,
     // includeScore: false,
     // shouldSort: true,
     // includeMatches: false,
     // findAllMatches: false,
-    minMatchCharLength: 2,
+    // minMatchCharLength: 2,
     // location: 0,
-    // threshold: 0.6,
-    // distance: 100,
     // useExtendedSearch: false,
-    // ignoreLocation: false,
-    // ignoreFieldNorm: false,
-    keys: [{ name: 'name', weight: 2 }, 'definition']
-  };
+    // distance: 100,
+    ignoreFieldNorm: true, threshold: 0.2, ignoreLocation: true, keys: [{ name: 'name', weight: 2 }, 'definition'] };
   const fuse = new Fuse(termsData, options);
 
   const searchData = pattern => {

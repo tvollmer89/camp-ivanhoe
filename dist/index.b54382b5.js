@@ -28790,18 +28790,17 @@ function Main() {
     _s();
     const [data, setData] = _react.useState(_dataJsonDefault.default);
     const options = {
-        // isCaseSensitive: false,
         // includeScore: false,
         // shouldSort: true,
         // includeMatches: false,
         // findAllMatches: false,
-        minMatchCharLength: 2,
+        // minMatchCharLength: 2,
         // location: 0,
-        // threshold: 0.6,
-        // distance: 100,
         // useExtendedSearch: false,
-        // ignoreLocation: false,
-        // ignoreFieldNorm: false,
+        // distance: 100,
+        ignoreFieldNorm: true,
+        threshold: 0.2,
+        ignoreLocation: true,
         keys: [
             {
                 name: 'name',
@@ -28829,7 +28828,7 @@ function Main() {
     return(/*#__PURE__*/ _jsxRuntime.jsx("main", {
         __source: {
             fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-            lineNumber: 44,
+            lineNumber: 39,
             columnNumber: 5
         },
         __self: this,
@@ -28837,7 +28836,7 @@ function Main() {
             className: "container",
             __source: {
                 fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                lineNumber: 45,
+                lineNumber: 40,
                 columnNumber: 7
             },
             __self: this,
@@ -28846,7 +28845,7 @@ function Main() {
                     className: "row",
                     __source: {
                         fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                        lineNumber: 46,
+                        lineNumber: 41,
                         columnNumber: 9
                     },
                     __self: this,
@@ -28854,7 +28853,7 @@ function Main() {
                         className: "d-flex align-items-end",
                         __source: {
                             fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                            lineNumber: 47,
+                            lineNumber: 42,
                             columnNumber: 11
                         },
                         __self: this,
@@ -28863,7 +28862,7 @@ function Main() {
                                 className: "me-auto",
                                 __source: {
                                     fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                                    lineNumber: 48,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 },
                                 __self: this,
@@ -28873,7 +28872,7 @@ function Main() {
                                 className: "text-danger pe-3 text-end",
                                 __source: {
                                     fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                                    lineNumber: 49,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 },
                                 __self: this,
@@ -28886,7 +28885,7 @@ function Main() {
                                 className: "col-md-4",
                                 __source: {
                                     fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                                    lineNumber: 52,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 },
                                 __self: this,
@@ -28896,7 +28895,7 @@ function Main() {
                                     ,
                                     __source: {
                                         fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                                        lineNumber: 53,
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     },
                                     __self: this
@@ -28909,7 +28908,7 @@ function Main() {
                     results: data,
                     __source: {
                         fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                        lineNumber: 60,
+                        lineNumber: 55,
                         columnNumber: 9
                     },
                     __self: this
