@@ -7,6 +7,7 @@ $orange: #af4209;
 $green: #446455;
 $muteGreen: #8d9875;
 $taupe: #cdc08c;
+$khaki: #91682c;
 $teal: #609f80;
 $darkTeal: #4a574d;
 $lightGray: #d5d5d3;
@@ -14,7 +15,7 @@ $silver: #d3dddc;
 $darkBlue: #29211f;
 $maroon: #5b1a18;
 $black: #000;
-$danger: $maroon;
+$danger: $khaki;
 
 /*----------  Grays  ----------*/
 $gray-100: #f8f9fa;
@@ -29,12 +30,12 @@ $gray-900: #212529;
 
 
 /*----------  Body  ----------*/
-$body-bg: $gray-300;
+$body-bg: $gray-100;
 
 /*----------  type  ----------*/
 $font-family-sans-serif: 'FFDINWebPro', arial, sans-serif;
 $font-family-bold: 'FFDINWebProBold', arial, sans-serif;
-$body-color: $darkTeal;
+$body-color: $darkBlue;
 $link-color: $darkBlue;
 $link-hover-color: $maroon;
 $link-decoration: none;
