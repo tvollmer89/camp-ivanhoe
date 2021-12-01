@@ -1,15 +1,20 @@
 /*----------  Colors  ----------*/
-$blue: #00a1df;
-$red: #cf0a2c;
-$pink: #a70063;
-$teal: #008996;
-$orange: #ff8300;
-$yellow: #eedc00;
-$green: #60a845;
-$cyan: #6edbd5;
-$carb-gray: #a0a1a2;
-$silver: #adb5bd;
+$blue: #84d4e3;
+$pink: #f4b5bc;
+$yellow: #fad77b;
+$darkYellow: #cbb345;
+$orange: #af4209;
+$green: #446455;
+$muteGreen: #8d9875;
+$taupe: #cdc08c;
+$teal: #609f80;
+$darkTeal: #4a574d;
+$lightGray: #d5d5d3;
+$silver: #d3dddc;
+$darkBlue: #29211f;
+$maroon: #5b1a18;
 $black: #000;
+$danger: $maroon;
 
 /*----------  Grays  ----------*/
 $gray-100: #f8f9fa;
@@ -22,26 +27,32 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 
+
+/*----------  Body  ----------*/
+$body-bg: $gray-300;
+
 /*----------  type  ----------*/
 $font-family-sans-serif: 'FFDINWebPro', arial, sans-serif;
 $font-family-bold: 'FFDINWebProBold', arial, sans-serif;
-$body-color: $black;
-$link-color: $blue;
-$link-hover-color: $gray-700;
+$body-color: $darkTeal;
+$link-color: $darkBlue;
+$link-hover-color: $maroon;
 $link-decoration: none;
-// $link-hover-color: $black;
+
 
 /*----------  forms  ----------*/
+$input-border-color: $darkTeal;
 $input-btn-focus-color: transparent;
-$input-focus-border-color: $silver;
+$input-focus-border-color: $darkTeal;
 $input-btn-focus-color-opacity: 0;
 $input-btn-focus-box-shadow: none;
+$input-placeholder-color: $darkTeal;
 
 /*----------  buttons  ----------*/
 $btn-active-box-shadow: none;
 
 /*----------  tables  ----------*/
-$border-color: $gray-300;
+$border-color: $darkTeal;
 
 /*----------  cards  ----------*/
 $card-height: 100%;

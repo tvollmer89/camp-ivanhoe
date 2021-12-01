@@ -11,7 +11,8 @@
     "dev": "parcel ./src/index.html",
     "start": "parcel",
     "prebuild": "npx rimraf build",
-    "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build"
+    "build": "parcel build --public-url ./ ./src/index.html --dist-dir build",
+    "build-github": "rm -rf docs/* && parcel build --public-url ./ ./src/index.html --dist-dir docs"
   },
   "devDependencies": {
     "@popperjs/core": "^2.11.0",

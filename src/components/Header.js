@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () =>
-  <header>
+  <header className="mb-3">
     <div className="container">
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
