@@ -1,5 +1,5 @@
 
-import lunr from 'lunr';
+
 
 export function Terms({results}) {
   return (
@@ -32,14 +32,3 @@ const Term = ({name, definition}) => {
     </ul>
   )
 }
-
-// let idx = lunr(function () {
-//   this.ref('name')
-//   this.field('definition')
-
-//   termsData.forEach(function (doc) {
-//     this.add(doc)
-//   }, this)
-// })
-
-// console.log('Results: ' + JSON.stringify(idx.search("salt")));
