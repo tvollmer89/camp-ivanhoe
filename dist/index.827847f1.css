@@ -4530,7 +4530,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #29211f;
+  color: #446455;
   text-decoration: none;
 }
 a:hover {
@@ -7456,7 +7456,7 @@ textarea.form-control-lg {
 }
 .btn-link {
   font-weight: 400;
-  color: #29211f;
+  color: #446455;
   text-decoration: none;
 }
 .btn-link:hover {
@@ -7809,7 +7809,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #29211f;
+  color: #446455;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -7857,8 +7857,8 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #84d4e3;
+  color: #fad77b;
+  background-color: #446455;
 }
 .nav-fill > .nav-link,
 .nav-fill .nav-item {
@@ -8538,7 +8538,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #29211f;
+  color: #446455;
   background-color: #fff;
   border: 1px solid #dee2e6;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -9219,15 +9219,26 @@ a img {
   }
 }
 /*=====  End of Reset  ======*/
+.btn-search {
+  background-color: #84d4e3;
+  border: 1px solid #4a574d;
+  color: #29211f;
+}
+/*=============================================
+=            footer.scss            =
+=============================================*/
+footer {
+  margin-top: 2rem;
+  background-color: #fad77b;
+  color: #91682c;
+}
 /*=============================================
 =            header.scss            =
 =============================================*/
 header {
   background-color: #84d4e3;
 }
-.btn-search {
-  background-color: #84d4e3;
-  border: 1px solid #4a574d;
-  color: #29211f;
+.nav-link {
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.827847f1.css.map */
