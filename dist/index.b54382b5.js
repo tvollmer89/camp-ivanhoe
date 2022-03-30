@@ -28832,7 +28832,6 @@ function Main() {
             setData(_dataJsonDefault.default);
             return;
         }
-        console.log('pattern: ' + pattern);
         const result = !filter ? fuse.search(pattern) : fuse.search({
             $and: [
                 {
@@ -28851,7 +28850,7 @@ function Main() {
     };
     const clearSearch = ()=>{
         searchList();
-        console.log('search cleared');
+        document.getElementById('search-field').value = '';
     };
     const clearFilters = ()=>{
         // clear filter links
@@ -28869,13 +28868,12 @@ function Main() {
         e.preventDefault();
         e.target.classList.add('active');
         searchList(`^${e.target.textContent}`, true);
-        console.log(`The ${e.target.textContent} was clicked.`);
     };
     return(/*#__PURE__*/ _jsxRuntime.jsx("main", {
         className: "flex-shrink-0",
         __source: {
             fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-            lineNumber: 83,
+            lineNumber: 81,
             columnNumber: 5
         },
         __self: this,
@@ -28883,7 +28881,7 @@ function Main() {
             className: "container",
             __source: {
                 fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                lineNumber: 84,
+                lineNumber: 82,
                 columnNumber: 7
             },
             __self: this,
@@ -28894,7 +28892,7 @@ function Main() {
                     onChange: handleInput,
                     __source: {
                         fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                        lineNumber: 85,
+                        lineNumber: 83,
                         columnNumber: 9
                     },
                     __self: this
@@ -28903,7 +28901,7 @@ function Main() {
                     className: "row",
                     __source: {
                         fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                        lineNumber: 90,
+                        lineNumber: 88,
                         columnNumber: 9
                     },
                     __self: this,
@@ -28912,7 +28910,7 @@ function Main() {
                         className: "nav nav-pills py-2 justify-content-center",
                         __source: {
                             fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                            lineNumber: 91,
+                            lineNumber: 89,
                             columnNumber: 11
                         },
                         __self: this,
@@ -28922,7 +28920,7 @@ function Main() {
                                 onClick: handleClick,
                                 __source: {
                                     fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                                    lineNumber: 96,
+                                    lineNumber: 94,
                                     columnNumber: 17
                                 },
                                 __self: this
@@ -28934,7 +28932,7 @@ function Main() {
                     results: data,
                     __source: {
                         fileName: "Documents/Nerds/camp-ivanhoe/src/components/Main.js",
-                        lineNumber: 105,
+                        lineNumber: 103,
                         columnNumber: 9
                     },
                     __self: this
@@ -28967,34 +28965,32 @@ parcelHelpers.export(exports, "Terms", ()=>Terms
 );
 var _jsxRuntime = require("react/jsx-runtime");
 function Terms({ results  }) {
-    return(/*#__PURE__*/ _jsxRuntime.jsx(_jsxRuntime.Fragment, {
-        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
-            className: "terms-container mb-5",
+    return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
+        className: "terms-container mb-5",
+        __source: {
+            fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
+            lineNumber: 3,
+            columnNumber: 5
+        },
+        __self: this,
+        children: /*#__PURE__*/ _jsxRuntime.jsx("ul", {
             __source: {
                 fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
-                lineNumber: 7,
+                lineNumber: 4,
                 columnNumber: 7
             },
             __self: this,
-            children: /*#__PURE__*/ _jsxRuntime.jsx("ul", {
-                __source: {
-                    fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
-                    lineNumber: 8,
-                    columnNumber: 9
-                },
-                __self: this,
-                children: results.map((term)=>{
-                    return(/*#__PURE__*/ _jsxRuntime.jsx(Term, {
-                        name: term.name,
-                        definition: term.definition,
-                        __source: {
-                            fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
-                            lineNumber: 11,
-                            columnNumber: 17
-                        },
-                        __self: this
-                    }, term.name));
-                })
+            children: results.map((term)=>{
+                return(/*#__PURE__*/ _jsxRuntime.jsx(Term, {
+                    name: term.name,
+                    definition: term.definition,
+                    __source: {
+                        fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
+                        lineNumber: 7,
+                        columnNumber: 13
+                    },
+                    __self: this
+                }, term.name));
             })
         })
     }));
@@ -29004,15 +29000,15 @@ const Term = ({ name , definition  })=>{
     if (!name) return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
         __source: {
             fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
-            lineNumber: 25,
-            columnNumber: 20
+            lineNumber: 20,
+            columnNumber: 21
         },
         __self: undefined
     }));
     return(/*#__PURE__*/ _jsxRuntime.jsxs("li", {
         __source: {
             fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
-            lineNumber: 27,
+            lineNumber: 22,
             columnNumber: 5
         },
         __self: undefined,
@@ -29021,7 +29017,7 @@ const Term = ({ name , definition  })=>{
                 className: "bold",
                 __source: {
                     fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
-                    lineNumber: 28,
+                    lineNumber: 23,
                     columnNumber: 7
                 },
                 __self: undefined,
@@ -29030,7 +29026,7 @@ const Term = ({ name , definition  })=>{
             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                 __source: {
                     fileName: "Documents/Nerds/camp-ivanhoe/src/components/Terms.js",
-                    lineNumber: 29,
+                    lineNumber: 26,
                     columnNumber: 7
                 },
                 __self: undefined,

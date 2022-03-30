@@ -15,21 +15,11 @@ function Main() {
   };
   /*----------  Text Search  ----------*/
   const [data, setData] = useState(termsData);
-  const options = {
-    // isCaseSensitive: false,
+  const options = { // isCaseSensitive: false,
     // includeScore: false,
     // shouldSort: true,
     // includeMatches: false,
-    // findAllMatches: false,
-    // minMatchCharLength: 2,
-    // location: 0,
-    useExtendedSearch: true,
-    // distance: 100,
-    ignoreFieldNorm: true,
-    threshold: 0.2,
-    ignoreLocation: true,
-    keys: [{ name: 'name', weight: 2 }, 'definition']
-  };
+    useExtendedSearch: true, ignoreFieldNorm: true, threshold: 0.2, ignoreLocation: true, keys: [{ name: 'name', weight: 2 }, 'definition'] };
   const fuse = new Fuse(termsData, options);
 
   const searchList = (pattern, filter) => {
@@ -37,10 +27,9 @@ function Main() {
       setData(termsData);
       return;
     }
-    console.log('pattern: ' + pattern);
-    const result = !filter
-      ? fuse.search(pattern)
-      : fuse.search({ $and: [{ name: pattern }] });
+    const result = !filter ? fuse.search(pattern) : fuse.search({
+          $and: [{ name: pattern }]
+        });
     const matches = [];
     if (!result.length) {
       setData([]);
@@ -54,7 +43,7 @@ function Main() {
 
   const clearSearch = () => {
     searchList();
-    console.log('search cleared');
+    document.getElementById('search-field').value = '';
   };
 
   const clearFilters = () => {
@@ -76,7 +65,6 @@ function Main() {
     e.preventDefault();
     e.target.classList.add('active');
     searchList(`^${e.target.textContent}`, true);
-    console.log(`The ${e.target.textContent} was clicked.`);
   };
 
   return (
